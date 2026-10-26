@@ -21,6 +21,7 @@ const description =
   "Buffets und Catering in Köln-Ehrenfeld. Willi Moll, Liebigstraße 145. Das Angebot folgt einem Gespräch — ohne Speisekarte und ohne Preise auf dieser Seite.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mollerie-catering.vercel.app"),
   title: {
     default: `${site.title} in Köln-Ehrenfeld`,
     template: `%s · ${site.name}`,
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
     description,
     locale: "de_DE",
     type: "website",
+    url: "https://mollerie-catering.vercel.app",
   },
 };
 

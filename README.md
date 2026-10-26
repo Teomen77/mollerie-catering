@@ -4,7 +4,9 @@ One-page site for mollerie, Liebigstraße 145, 50823 Köln.
 
 ## Production
 
-The live URL is added here after the Vercel production deploy.
+https://mollerie-catering.vercel.app
+
+Source: https://github.com/Teomen77/mollerie-catering
 
 ## Local
 
