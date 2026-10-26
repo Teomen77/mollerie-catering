@@ -1,69 +1,238 @@
 import Image from "next/image";
+import { EnquiryForm } from "@/components/site/enquiry-form";
+import { HeroPhoto } from "@/components/site/hero-photo";
+import { addressLine, mapLink, site } from "@/lib/site";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main id="inhalt">
+      <section className="flex min-h-[calc(100svh-4rem)] flex-col">
+        <HeroPhoto />
+        <div className="relative z-10 -mt-16 border-t border-ink/15 bg-paper shadow-[0_-28px_40px_-24px_oklch(0.27_0.024_55/0.45)] sm:-mt-24">
+          <div className="mx-auto grid w-full max-w-6xl gap-8 px-5 py-8 sm:px-8 md:grid-cols-[minmax(0,1.4fr)_auto] md:items-end md:py-12 lg:px-10">
+            <div>
+              <h1 className="font-display text-[clamp(2.5rem,4.8vw,5.25rem)] leading-[0.96] tracking-[-0.035em] text-balance">
+                Buffets und Catering
+                <span className="block">in Ehrenfeld.</span>
+              </h1>
+              <p className="mt-5 max-w-[38rem] text-lg leading-relaxed text-ink-soft">
+                Willi Moll kocht seit April 2009 in der Liebigstraße.
+                Grundprodukte aus der Nähe, ohne Fertigprodukte. Das Angebot
+                folgt einem Gespräch.
+              </p>
+              <p className="mt-3 max-w-[38rem] text-sm text-ink-soft">
+                Das Foto ist ein Stellvertreter und zeigt nicht die Küche der
+                mollerie.
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-3 md:justify-end md:pb-1">
+              <a
+                href="#kontakt"
+                className="inline-flex h-12 items-center bg-beet px-6 text-base text-paper hover:bg-beet/90"
+              >
+                Angebot anfragen
+              </a>
+              <a
+                href={`tel:${site.phoneTel}`}
+                className="text-base underline decoration-foreground/40 underline-offset-4 hover:decoration-foreground"
+              >
+                {site.phoneDisplay}
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="leistungen" className="scroll-mt-20 py-28 md:py-36">
+        <div className="mx-auto max-w-6xl px-5 sm:px-8 lg:px-10">
+          <h2 className="max-w-[16ch] font-display text-[clamp(2.2rem,4vw,3.5rem)] leading-[1.05] tracking-[-0.03em] text-balance">
+            Was Sie anfragen können
+          </h2>
+          <p className="mt-6 max-w-[62ch] text-lg leading-relaxed text-ink-soft">
+            Essen soll Freude machen, auch in der schlichten Form. Dafür
+            reichen gute Grundprodukte, am liebsten aus der Nähe, und der
+            Verzicht auf Fertigprodukte. So steht es von Willi Moll auf der
+            bisherigen Website.
           </p>
+
+          <article className="mt-20 grid items-end gap-8 md:grid-cols-12 md:gap-12">
+            <figure className="md:col-span-7">
+              <div className="relative aspect-[3/4] sm:aspect-[4/5]">
+                <Image
+                  src="/photos/platter.jpg"
+                  alt="Stellvertretendes Foto einer Platte mit Gemüse. Es zeigt kein Gericht der mollerie."
+                  fill
+                  loading="eager"
+                  sizes="(min-width: 768px) 55vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 text-sm text-ink-soft">
+                Stellvertretendes Foto, nicht die Küche der mollerie.
+              </figcaption>
+            </figure>
+            <div className="md:col-span-5">
+              <h3 className="font-display text-4xl tracking-[-0.03em]">Buffets</h3>
+              <p className="mt-4 max-w-[40ch] text-lg leading-relaxed text-ink-soft">
+                Für alle möglichen Anlässe, in vielen Varianten. Die
+                Zusammenstellung richtet sich nach der Jahreszeit und nach dem,
+                was Sie vorhaben. Gerichte und Preise besprechen wir, sie
+                stehen hier nicht.
+              </p>
+            </div>
+          </article>
+
+          <article className="mt-28 grid items-center gap-8 md:grid-cols-12 md:gap-12">
+            <div className="md:col-span-5">
+              <h3 className="font-display text-4xl tracking-[-0.03em]">Events</h3>
+              <p className="mt-4 text-lg leading-relaxed text-ink-soft">
+                Für Messe, Film, Foto und Musik. Was an dem Tag auf den Tisch
+                kommt, klären wir am Anlass — nicht über eine fertige Karte.
+              </p>
+            </div>
+            <figure className="md:col-span-7">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/photos/table.jpg"
+                  alt="Stellvertretendes Foto eines gedeckten Tisches. Es zeigt keinen Raum der mollerie."
+                  fill
+                  loading="eager"
+                  sizes="(min-width: 768px) 55vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 text-sm text-ink-soft">
+                Stellvertretendes Foto, kein Raum der mollerie.
+              </figcaption>
+            </figure>
+          </article>
+
+          <article className="mt-28 border-t border-border pt-10 md:grid md:grid-cols-12 md:gap-12">
+            <h3 className="font-display text-4xl tracking-[-0.03em] md:col-span-4">
+              Catering
+            </h3>
+            <div className="mt-4 md:col-span-8 md:mt-2">
+              <p className="max-w-[58ch] text-lg leading-relaxed text-ink-soft">
+                Täglich frisch zubereitet und geliefert. Dazu gehören Suppen,
+                Quiches, Salate, Pastagerichte, Fleischgerichte, vegetarische
+                Gerichte und Desserts. Die genaue Auswahl gibt es auf Anfrage.
+              </p>
+            </div>
+          </article>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section id="ablauf" className="scroll-mt-20 bg-paper-deep py-28 md:py-36">
+        <div className="mx-auto max-w-6xl px-5 sm:px-8 lg:px-10">
+          <h2 className="max-w-[14ch] font-display text-[clamp(2.2rem,4vw,3.5rem)] leading-[1.05] tracking-[-0.03em] text-balance">
+            So läuft eine Anfrage
+          </h2>
+          <ol className="mt-16 grid list-none gap-12 p-0 md:grid-cols-3 md:gap-10">
+            <li>
+              <h3 className="font-display text-3xl tracking-[-0.03em]">
+                Anrufen oder schreiben
+              </h3>
+              <p className="mt-3 max-w-[32ch] leading-relaxed text-ink-soft">
+                Telefon, Mobil oder das Formular. So erreichen Sie {site.owner}.
+              </p>
+            </li>
+            <li>
+              <h3 className="font-display text-3xl tracking-[-0.03em]">
+                Unverbindlich sprechen
+              </h3>
+              <p className="mt-3 max-w-[32ch] leading-relaxed text-ink-soft">
+                Anlass, Gäste, Ort und Zeitpunkt reichen für das Gespräch.
+              </p>
+            </li>
+            <li>
+              <h3 className="font-display text-3xl tracking-[-0.03em]">
+                Angebot bekommen
+              </h3>
+              <p className="mt-3 max-w-[32ch] leading-relaxed text-ink-soft">
+                Zusammenstellung und Preis entstehen daraus. Auf dieser Seite
+                stehen sie nicht.
+              </p>
+            </li>
+          </ol>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section id="kontakt" className="scroll-mt-20 py-28 md:py-36">
+        <div className="mx-auto grid max-w-6xl gap-16 px-5 sm:px-8 lg:grid-cols-12 lg:px-10">
+          <div className="lg:col-span-4">
+            <h2 className="font-display text-[clamp(2.2rem,4vw,3.5rem)] leading-[1.05] tracking-[-0.03em] text-balance">
+              Angebot anfragen
+            </h2>
+            <dl className="mt-8 space-y-5 text-base">
+              <div>
+                <dt className="text-sm text-ink-soft">Telefon</dt>
+                <dd>
+                  <a className="underline-offset-4 hover:underline" href={`tel:${site.phoneTel}`}>
+                    {site.phoneDisplay}
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt className="text-sm text-ink-soft">Mobil</dt>
+                <dd>
+                  <a className="underline-offset-4 hover:underline" href={`tel:${site.mobileTel}`}>
+                    {site.mobileDisplay}
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt className="text-sm text-ink-soft">E-Mail</dt>
+                <dd>
+                  <a className="underline-offset-4 hover:underline" href={`mailto:${site.email}`}>
+                    {site.email}
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt className="text-sm text-ink-soft">Adresse</dt>
+                <dd>{addressLine}</dd>
+              </div>
+            </dl>
+          </div>
+          <div className="lg:col-span-8">
+            <EnquiryForm />
+          </div>
+        </div>
+      </section>
+
+      <section id="standort" className="scroll-mt-20">
+        <div className="relative">
+          {/* The file itself, not the image optimizer, so the map is in the first paint. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/photos/map.png"
+            alt="Karte von Liebigstraße in Köln-Ehrenfeld. Der Ring markiert Liebigstraße 145."
+            width={1280}
+            height={768}
+            className="h-[52vh] min-h-80 w-full object-cover object-center md:h-[78vh]"
+          />
+          <div className="bg-paper px-5 py-10 sm:px-8 md:absolute md:bottom-10 md:left-8 md:max-w-sm md:px-8 md:py-8 lg:left-10">
+            <h2 className="font-display text-4xl leading-none tracking-[-0.03em]">
+              {site.street}
+            </h2>
+            <p className="mt-3 text-lg text-ink-soft">
+              {site.postalCode} {site.city}, {site.district}
+            </p>
+            <p className="mt-4 max-w-[28ch] text-sm leading-relaxed text-ink-soft">
+              Die Küche ist hier. Ob geliefert wird, klären wir im Gespräch.
+            </p>
+            <a
+              href={mapLink}
+              className="mt-6 inline-flex text-sm underline underline-offset-4"
+            >
+              Größere Karte öffnen
+            </a>
+            <p className="mt-3 text-xs text-ink-soft">
+              Karte © OpenStreetMap-Mitwirkende
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T00:22:00+01:00",
+  "title": "Design System: mollerie",
+  "extensions": {
+    "colorMeta": {
+      "beet": {
+        "role": "primary",
+        "displayName": "Beet Ink",
+        "canonical": "oklch(0.4 0.112 27)",
+        "tonalRamp": [
+          "oklch(0.15 0.112 27)",
+          "oklch(0.26 0.112 27)",
+          "oklch(0.38 0.112 27)",
+          "oklch(0.50 0.112 27)",
+          "oklch(0.62 0.112 27)",
+          "oklch(0.74 0.112 27)",
+          "oklch(0.85 0.112 27)",
+          "oklch(0.95 0.112 27)"
+        ]
+      },
+      "beet-hover": {
+        "role": "primary",
+        "displayName": "Beet at Nine Tenths",
+        "canonical": "oklch(0.4 0.112 27 / 0.9)",
+        "tonalRamp": [
+          "oklch(0.15 0.112 27)",
+          "oklch(0.26 0.112 27)",
+          "oklch(0.38 0.112 27)",
+          "oklch(0.50 0.112 27)",
+          "oklch(0.62 0.112 27)",
+          "oklch(0.74 0.112 27)",
+          "oklch(0.85 0.112 27)",
+          "oklch(0.95 0.112 27)"
+        ]
+      },
+      "selection": {
+        "role": "primary",
+        "displayName": "Selection Wash",
+        "canonical": "oklch(0.4 0.112 27 / 0.22)",
+        "tonalRamp": [
+          "oklch(0.15 0.112 27)",
+          "oklch(0.26 0.112 27)",
+          "oklch(0.38 0.112 27)",
+          "oklch(0.50 0.112 27)",
+          "oklch(0.62 0.112 27)",
+          "oklch(0.74 0.112 27)",
+          "oklch(0.85 0.112 27)",
+          "oklch(0.95 0.112 27)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Uncoated Paper",
+        "canonical": "oklch(0.975 0.007 92)",
+        "tonalRamp": [
+          "oklch(0.15 0.007 92)",
+          "oklch(0.26 0.007 92)",
+          "oklch(0.38 0.007 92)",
+          "oklch(0.50 0.007 92)",
+          "oklch(0.62 0.007 92)",
+          "oklch(0.74 0.007 92)",
+          "oklch(0.85 0.007 92)",
+          "oklch(0.95 0.007 92)"
+        ]
+      },
+      "paper-deep": {
+        "role": "neutral",
+        "displayName": "Pressed Paper",
+        "canonical": "oklch(0.935 0.014 86)",
+        "tonalRamp": [
+          "oklch(0.15 0.014 86)",
+          "oklch(0.26 0.014 86)",
+          "oklch(0.38 0.014 86)",
+          "oklch(0.50 0.014 86)",
+          "oklch(0.62 0.014 86)",
+          "oklch(0.74 0.014 86)",
+          "oklch(0.85 0.014 86)",
+          "oklch(0.95 0.014 86)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Warm Ink",
+        "canonical": "oklch(0.27 0.024 55)",
+        "tonalRamp": [
+          "oklch(0.15 0.024 55)",
+          "oklch(0.26 0.024 55)",
+          "oklch(0.38 0.024 55)",
+          "oklch(0.50 0.024 55)",
+          "oklch(0.62 0.024 55)",
+          "oklch(0.74 0.024 55)",
+          "oklch(0.85 0.024 55)",
+          "oklch(0.95 0.024 55)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "oklch(0.38 0.024 52)",
+        "tonalRamp": [
+          "oklch(0.15 0.024 52)",
+          "oklch(0.26 0.024 52)",
+          "oklch(0.38 0.024 52)",
+          "oklch(0.50 0.024 52)",
+          "oklch(0.62 0.024 52)",
+          "oklch(0.74 0.024 52)",
+          "oklch(0.85 0.024 52)",
+          "oklch(0.95 0.024 52)"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(0.27 0.024 55 / 0.16)",
+        "tonalRamp": [
+          "oklch(0.15 0.024 55)",
+          "oklch(0.26 0.024 55)",
+          "oklch(0.38 0.024 55)",
+          "oklch(0.50 0.024 55)",
+          "oklch(0.62 0.024 55)",
+          "oklch(0.74 0.024 55)",
+          "oklch(0.85 0.024 55)",
+          "oklch(0.95 0.024 55)"
+        ]
+      },
+      "field-line": {
+        "role": "neutral",
+        "displayName": "Field Baseline",
+        "canonical": "oklch(0.27 0.024 55 / 0.25)",
+        "tonalRamp": [
+          "oklch(0.15 0.024 55)",
+          "oklch(0.26 0.024 55)",
+          "oklch(0.38 0.024 55)",
+          "oklch(0.50 0.024 55)",
+          "oklch(0.62 0.024 55)",
+          "oklch(0.74 0.024 55)",
+          "oklch(0.85 0.024 55)",
+          "oklch(0.95 0.024 55)"
+        ]
+      },
+      "destructive": {
+        "role": "destructive",
+        "displayName": "Error Ink",
+        "canonical": "oklch(0.45 0.15 25)",
+        "tonalRamp": [
+          "oklch(0.15 0.15 25)",
+          "oklch(0.26 0.15 25)",
+          "oklch(0.38 0.15 25)",
+          "oklch(0.50 0.15 25)",
+          "oklch(0.62 0.15 25)",
+          "oklch(0.74 0.15 25)",
+          "oklch(0.85 0.15 25)",
+          "oklch(0.95 0.15 25)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The first invitation line on the home page."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section invitation lines."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Offer names and the street on the map slip."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "The lowercase header lockup."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Fact paragraphs on the home page."
+      },
+      "ui": {
+        "displayName": "UI",
+        "purpose": "Enquiry actions, form values, contact facts, and legal copy."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigation, captions, and quiet meta."
+      }
+    },
+    "shadows": [
+      {
+        "name": "hero-wash",
+        "value": "0 -28px 40px -24px oklch(0.27 0.024 55 / 0.45)",
+        "purpose": "Soft upward wash where the paper band overlaps the hero photograph. No other surface uses a shadow."
+      }
+    ],
+    "motion": [
+      {
+        "name": "hero-drift",
+        "value": "18s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Hero photograph eases from scale 1.06 to 1 and then holds. Turned off when the visitor prefers reduced motion."
+      },
+      {
+        "name": "scroll",
+        "value": "smooth",
+        "purpose": "Document scrolling. Falls back to auto when the visitor prefers reduced motion."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Square beet enquiry action, paper type, regular Figtree.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#kontakt\">Angebot anfragen</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; height: 3rem; padding: 0 1.5rem; border: 0; border-radius: 0; background: var(--beet); color: var(--paper); font-family: var(--font-sans), sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.5; text-decoration: none; cursor: pointer; } .ds-btn-primary:hover { background: oklch(0.4 0.112 27 / 0.9); } .ds-btn-primary:focus-visible { outline: 2px solid var(--beet); outline-offset: 3px; }"
+    },
+    {
+      "name": "Compact Call",
+      "kind": "button",
+      "refersTo": "button-compact",
+      "description": "Header call. Same beet fill at label size.",
+      "html": "<a class=\"ds-btn-compact\" href=\"tel:+492217165584\">Anrufen</a>",
+      "css": ".ds-btn-compact { display: inline-flex; align-items: center; padding: 0.5rem 1rem; border: 0; border-radius: 0; background: var(--beet); color: var(--paper); font-family: var(--font-sans), sans-serif; font-size: 0.875rem; font-weight: 400; line-height: 1.4; text-decoration: none; cursor: pointer; } .ds-btn-compact:hover { background: oklch(0.4 0.112 27 / 0.9); } .ds-btn-compact:focus-visible { outline: 2px solid var(--beet); outline-offset: 3px; }"
+    },
+    {
+      "name": "Companion Link",
+      "kind": "custom",
+      "refersTo": "link-companion",
+      "description": "Landline beside the primary action. Always underlined.",
+      "html": "<a class=\"ds-link-companion\" href=\"tel:+492217165584\">0221 7165584</a>",
+      "css": ".ds-link-companion { color: var(--ink); font-family: var(--font-sans), sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.5; text-decoration: underline; text-decoration-color: oklch(0.27 0.024 55 / 0.4); text-underline-offset: 4px; } .ds-link-companion:hover { text-decoration-color: var(--ink); } .ds-link-companion:focus-visible { outline: 2px solid var(--beet); outline-offset: 3px; }"
+    },
+    {
+      "name": "Quiet Link",
+      "kind": "custom",
+      "refersTo": "link-quiet",
+      "description": "Header section link. Underline and warm ink on hover.",
+      "html": "<a class=\"ds-link-quiet\" href=\"#leistungen\">Leistungen</a>",
+      "css": ".ds-link-quiet { color: var(--ink-soft); font-family: var(--font-sans), sans-serif; font-size: 0.875rem; font-weight: 400; line-height: 1.4; text-decoration: none; text-underline-offset: 4px; } .ds-link-quiet:hover { color: var(--ink); text-decoration: underline; } .ds-link-quiet:focus-visible { outline: 2px solid var(--beet); outline-offset: 3px; }"
+    },
+    {
+      "name": "Underline Field",
+      "kind": "input",
+      "refersTo": "input-line",
+      "description": "A single baseline for an enquiry fact. Focus turns the line beet.",
+      "html": "<label class=\"ds-label\" for=\"ds-anlass\">Anlass</label><input class=\"ds-field\" id=\"ds-anlass\" placeholder=\"Geburtstag, Drehtag, Messe\" />",
+      "css": ".ds-label { display: block; margin-bottom: 0.5rem; color: var(--ink); font-family: var(--font-sans), sans-serif; font-size: 0.875rem; font-weight: 400; line-height: 1; } .ds-field { display: block; width: 16rem; height: 3rem; padding: 0; border: 0; border-bottom: 1px solid oklch(0.27 0.024 55 / 0.25); border-radius: 0; background: transparent; color: var(--ink); caret-color: var(--beet); font-family: var(--font-sans), sans-serif; font-size: 1rem; font-weight: 400; box-shadow: none; } .ds-field::placeholder { color: var(--ink-soft); } .ds-field:hover { border-bottom-color: oklch(0.27 0.024 55 / 0.25); } .ds-field:focus-visible { outline: none; border-bottom-color: var(--beet); }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-bar",
+      "description": "Sticky paper bar, lowercase wordmark, quiet links, compact beet call.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-wordmark\" href=\"/\">mollerie</a><nav class=\"ds-nav-links\"><a class=\"ds-nav-link\" href=\"#leistungen\">Leistungen</a><a class=\"ds-nav-link\" href=\"#kontakt\">Kontakt</a><a class=\"ds-nav-call\" href=\"tel:+492217165584\">Anrufen</a></nav></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 4rem; padding: 0 1.25rem; border-bottom: 1px solid var(--border, oklch(0.27 0.024 55 / 0.16)); background: var(--paper); } .ds-wordmark { color: var(--ink); font-family: var(--font-display), serif; font-size: 1.5rem; font-weight: 400; letter-spacing: -0.03em; text-decoration: none; } .ds-nav-links { display: flex; align-items: center; gap: 1.75rem; } .ds-nav-link { color: var(--ink-soft); font-family: var(--font-sans), sans-serif; font-size: 0.875rem; font-weight: 400; text-decoration: none; text-underline-offset: 4px; } .ds-nav-link:hover { color: var(--ink); text-decoration: underline; } .ds-nav-link:focus-visible, .ds-wordmark:focus-visible, .ds-nav-call:focus-visible { outline: 2px solid var(--beet); outline-offset: 3px; } .ds-nav-call { display: inline-flex; align-items: center; padding: 0.5rem 1rem; border-radius: 0; background: var(--beet); color: var(--paper); font-family: var(--font-sans), sans-serif; font-size: 0.875rem; font-weight: 400; text-decoration: none; } .ds-nav-call:hover { background: oklch(0.4 0.112 27 / 0.9); }"
+    },
+    {
+      "name": "Paper Band",
+      "kind": "custom",
+      "refersTo": "paper-band",
+      "description": "Paper crossing the hero photograph, with the single upward wash.",
+      "html": "<div class=\"ds-hero\"><div class=\"ds-hero-photo\"></div><div class=\"ds-band\"><p class=\"ds-display\">Buffets und Catering</p><a class=\"ds-band-action\" href=\"#kontakt\">Angebot anfragen</a></div></div>",
+      "css": ".ds-hero { background: var(--paper); } .ds-hero-photo { height: 9rem; background: oklch(0.55 0.04 70); } .ds-band { position: relative; z-index: 1; margin-top: -2.5rem; border-top: 1px solid oklch(0.27 0.024 55 / 0.15); background: var(--paper); box-shadow: 0 -28px 40px -24px oklch(0.27 0.024 55 / 0.45); padding: 1.5rem 1.25rem 1.25rem; } .ds-display { margin: 0 0 1rem; color: var(--ink); font-family: var(--font-display), serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; line-height: 0.96; letter-spacing: -0.035em; } .ds-band-action { display: inline-flex; align-items: center; height: 3rem; padding: 0 1.5rem; border-radius: 0; background: var(--beet); color: var(--paper); font-family: var(--font-sans), sans-serif; font-size: 1rem; font-weight: 400; text-decoration: none; } .ds-band-action:hover { background: oklch(0.4 0.112 27 / 0.9); } .ds-band-action:focus-visible { outline: 2px solid var(--beet); outline-offset: 3px; }"
+    },
+    {
+      "name": "Map Slip",
+      "kind": "card",
+      "refersTo": "map-slip",
+      "description": "Square paper slip over the map. No shadow.",
+      "html": "<div class=\"ds-map\"><div class=\"ds-map-ground\"></div><div class=\"ds-slip\"><p class=\"ds-slip-title\">Liebigstraße 145</p><p class=\"ds-slip-meta\">50823 Köln, Ehrenfeld</p><a class=\"ds-slip-link\" href=\"#standort\">Größere Karte öffnen</a></div></div>",
+      "css": ".ds-map { position: relative; min-height: 14rem; } .ds-map-ground { height: 14rem; background: oklch(0.86 0.03 145); } .ds-slip { position: absolute; left: 1rem; bottom: 1rem; max-width: 16rem; padding: 1.5rem 1.25rem; background: var(--paper); color: var(--ink); } .ds-slip-title { margin: 0; font-family: var(--font-display), serif; font-size: 2.25rem; font-weight: 400; line-height: 1; letter-spacing: -0.03em; } .ds-slip-meta { margin: 0.75rem 0 0; color: var(--ink-soft); font-family: var(--font-sans), sans-serif; font-size: 1.125rem; font-weight: 400; } .ds-slip-link { display: inline-flex; margin-top: 1rem; color: var(--ink); font-family: var(--font-sans), sans-serif; font-size: 0.875rem; text-decoration: underline; text-underline-offset: 4px; } .ds-slip-link:hover { text-decoration-thickness: 1px; } .ds-slip-link:focus-visible { outline: 2px solid var(--beet); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Uncoated Paper",
+    "overview": "mollerie reads as an invitation printed on a warm sheet. The page ground is uncoated paper. A food photograph may fill a field, and a paper band or a paper slip crosses it. Invitation lines are Petrona. Facts, navigation, captions, and fields are Figtree. Both faces stay at regular weight, so size, family, and tracking do the work of hierarchy.\n\nBeet ink is scarce. It fills the action that asks for an offer or places a call. Headings and facts stay warm ink, with a softer ink for support. Corners are square. Sections sit far apart. Depth is the edge of paper over a picture, or a full-width band of pressed paper. The hero band carries one soft upward wash so the photograph does not meet the type on a hard cut. No other surface is shadowed.\n\nThe visitor is addressed in formal Sie. The wordmark is the lowercase name. Photographs are full-bleed and unframed. A stand-in food picture says so in a caption. The location image is stitched OpenStreetMap tiles and keeps the contributor line.",
+    "keyCharacteristics": [
+      "Uncoated paper as the ground, pressed paper only as a full-width band",
+      "Beet ink only on filled enquiry actions",
+      "Petrona for invitation lines, Figtree for facts, both at regular weight",
+      "Square corners",
+      "Depth by overlap, with one soft wash on the hero band",
+      "Wide gaps between sections and between offer masses",
+      "Formal Sie, and a lowercase wordmark"
+    ],
+    "rules": [
+      {
+        "name": "The Beet Ink Rule",
+        "body": "Beet fills an enquiry action and nothing else: the offer request, the call, the control that opens the visitor's mail, and the way back when a page is missing. Headings, body copy, and text links stay warm ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Petrona sets the wordmark and every invitation line. Figtree sets facts, navigation, captions, and fields. Both stay at regular weight. A third face, or a bold cut of these two, is outside the system.",
+        "section": "typography"
+      },
+      {
+        "name": "The Wide Interval Rule",
+        "body": "Home sections clear 7rem vertically, and 9rem from the medium breakpoint. Masses inside a section separate by a gap of that order. Services are not a row of equal cards.",
+        "section": "layout"
+      },
+      {
+        "name": "The Overlap Rule",
+        "body": "Depth is paper crossing a photograph, or a full-width band of pressed paper. Stacked and offset shadows are out. The hero band's upward wash is the only shadow, and it stays on that overlap.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Square Corner Rule",
+        "body": "Buttons, fields, photographs, the paper band, and the map slip are square (0). The unused 2px radius scale in the base theme is not a corner to apply.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Underline Field Rule",
+        "body": "A field is a single baseline. The line is warm ink at a quarter strength. Focus turns that line beet and does not add a glow or a ring.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** keep the page on uncoated paper, and use pressed paper only for a full-width band.",
+      "**Do** overlap a paper band or a paper slip on photography instead of framing the picture.",
+      "**Do** set invitation lines in Petrona with tight negative tracking, and facts in Figtree.",
+      "**Do** reserve beet for a filled enquiry action: 3rem tall, 1.5rem of side padding, square.",
+      "**Do** caption a stand-in photograph in soft ink, and keep the OpenStreetMap credit on the map."
+    ],
+    "donts": [
+      "**Don't** round corners or frame photographs. Leave the hero photograph uncovered.",
+      "**Don't** color headings, body copy, or text links in beet, and leave sections on paper.",
+      "**Don't** stack drop shadows or offset shadows, and leave services out of equal card rows.",
+      "**Don't** place an eyebrow or a kicker above a heading.",
+      "**Don't** change the lowercase wordmark, and keep the visitor address in formal Sie."
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+Sourced map, not a generated photograph. Stitched from OpenStreetMap raster tiles at zoom 16 around Liebigstraße 145, 50823 Köln (50.9552201, 6.9310921). Tiles © OpenStreetMap contributors, ODbL. A ring marks the geocoded building. No invented geography.
