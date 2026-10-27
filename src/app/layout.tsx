@@ -40,6 +40,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "FoodEstablishment",
   name: site.title,
+  url: "https://mollerie-catering.vercel.app",
   founder: { "@type": "Person", name: site.owner },
   foundingDate: "2009-04",
   email: site.email,

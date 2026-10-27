@@ -128,21 +128,3 @@
   }
 }
 
-@keyframes hero-drift {
-  from {
-    transform: scale(1.06);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-.hero-drift {
-  animation: hero-drift 18s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-drift {
-    animation: none;
-  }
-}

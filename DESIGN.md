@@ -135,11 +135,11 @@ components:
 
 **Creative North Star: "Uncoated Paper"**
 
-mollerie reads as an invitation printed on a warm sheet. The page ground is uncoated paper. A food photograph may fill a field, and a paper band or a paper slip crosses it. Invitation lines are Petrona. Facts, navigation, captions, and fields are Figtree. Both faces stay at regular weight, so size, family, and tracking do the work of hierarchy.
+mollerie reads as an invitation printed on a warm sheet. The page ground is uncoated paper. There is no food photograph. Invitation lines are Petrona. Facts, navigation, captions, and fields are Figtree. Both faces stay at regular weight, so size, family, and tracking do the work of hierarchy.
 
-Beet ink is scarce. It fills the action that asks for an offer or places a call. Headings and facts stay warm ink, with a softer ink for support. Corners are square. Sections sit far apart. Depth is the edge of paper over a picture, or a full-width band of pressed paper. The hero band carries one soft upward wash so the photograph does not meet the type on a hard cut. No other surface is shadowed.
+Beet ink is scarce. It fills the action that asks for an offer or places a call. Headings and facts stay warm ink, with a softer ink for support. Corners are square. Sections sit far apart. Depth is a change of paper: a hairline, or a full-width band of pressed paper. No surface is shadowed.
 
-The visitor is addressed in formal Sie. The wordmark is the lowercase name. Photographs are full-bleed and unframed. A stand-in food picture says so in a caption. The location image is stitched OpenStreetMap tiles and keeps the contributor line.
+The visitor is addressed in formal Sie. The wordmark is the lowercase name. The location image is stitched OpenStreetMap tiles and keeps the contributor line.
 
 **Key Characteristics:**
 
@@ -200,7 +200,7 @@ The page is one column of wide masses inside a 72rem measure. Horizontal inset i
 
 Home sections clear 7rem vertically, and 9rem from the medium breakpoint. Inside a section, the first offer follows the introduction by 5rem; later offers separate by 7rem. From the medium breakpoint, a photograph and its invitation share a 12-column grid (seven and five). The enquiry steps become three columns. Contact splits four and eight from the large breakpoint. Legal pages narrow to a 48rem measure.
 
-The first viewport is the buffet photograph with the paper band overlapping its lower edge, by 4rem, and by 6rem from the small breakpoint. The heading, one fact, the offer action, and the landline sit in that band. The photograph is in the first paint and is not covered.
+The first viewport is the invitation on paper. The heading, one fact, the offer action, and the landline are in the first paint.
 
 ### Named Rules
 
@@ -208,17 +208,15 @@ The first viewport is the buffet photograph with the paper band overlapping its 
 
 ## Elevation & Depth
 
-Depth is overlap and a change of paper. The header, footer, and the quieter catering block use a hairline. The hero band overlaps the photograph and adds one upward wash, `box-shadow: 0 -28px 40px -24px oklch(0.27 0.024 55 / 0.45)`, plus a top edge of warm ink at 15% opacity. The map slip overlaps the map from the medium breakpoint and has no shadow; below that breakpoint it stacks under the map as the next paper block. Pressed paper marks the enquiry-step band in the normal flow.
+Depth is a change of paper. The header, footer, and the quieter offer blocks use a hairline. The map slip overlaps the map from the medium breakpoint and has no shadow; below that breakpoint it stacks under the map as the next paper block. Pressed paper marks the enquiry-step band in the normal flow.
 
-The hero photograph eases from scale 1.06 to 1 over 18s with `cubic-bezier(0.16, 1, 0.3, 1)`, then holds. Document scroll is smooth. Both fall back when the visitor prefers reduced motion: the drift is still, and scroll is instant.
+Document scroll is smooth, and falls back to instant when the visitor prefers reduced motion.
 
 ### Shadow Vocabulary
 
-- **Hero wash** (`0 -28px 40px -24px oklch(0.27 0.024 55 / 0.45)`): Only under the paper band that crosses the hero photograph.
-
 ### Named Rules
 
-**The Overlap Rule.** Depth is paper crossing a photograph, or a full-width band of pressed paper. Stacked and offset shadows are out. The hero band's upward wash is the only shadow, and it stays on that overlap.
+**The Overlap Rule.** The map slip may cross the map. Stacked and offset shadows are out. Nothing else is shadowed.
 
 ## Shapes
 
@@ -259,31 +257,26 @@ Filled, square, beet on paper. Regular Figtree. Hover moves beet to nine tenths.
 
 A 4rem paper bar, sticky, with a hairline along the bottom. The wordmark is Petrona at 1.5rem, lowercase, warm ink. Desktop links are label-size Figtree in soft ink, 1.75rem apart, with the compact beet call at the end. Below the medium breakpoint the links hide behind a square 2.5rem menu button; the open list is paper, separated by a hairline, with 1.125rem link type and the beet call under them.
 
-### Paper band
+### Invitation
 
-The signature overlap. Full-bleed paper, top hairline of warm ink at 15% opacity, the hero wash, and a negative margin of 4rem (6rem from the small breakpoint) over the photograph. Invitation, fact, primary action, and companion phone number share one row from the medium breakpoint.
+The first block is paper, closed by a hairline. Invitation, fact, primary action, and companion phone number share one row from the medium breakpoint.
 
 ### Map slip
 
 Paper over the map, square, no shadow, max width 24rem. From the medium breakpoint it sits 2.5rem from the bottom and 2rem from the left page edge (2.5rem from the large breakpoint). Title is the street in Petrona. A quiet underlined text link opens the larger map. The contributor line is the smallest Figtree on the page, at 0.75rem.
-
-### Hero photograph
-
-Full-bleed, uncovered, object-cover, square crop. It drifts once, as specified in Elevation & Depth. A stand-in caption in soft ink sits with the invitation, separate from the picture.
 
 ## Do's and Don'ts
 
 ### Do:
 
 - **Do** keep the page on uncoated paper, and use pressed paper only for a full-width band.
-- **Do** overlap a paper band or a paper slip on photography instead of framing the picture.
+- **Do** let the map slip cross the map, and keep the OpenStreetMap credit.
 - **Do** set invitation lines in Petrona with tight negative tracking, and facts in Figtree.
 - **Do** reserve beet for a filled enquiry action: 3rem tall, 1.5rem of side padding, square.
-- **Do** caption a stand-in photograph in soft ink, and keep the OpenStreetMap credit on the map.
 
 ### Don't:
 
-- **Don't** round corners or frame photographs. Leave the hero photograph uncovered.
+- **Don't** add a food photograph that is not the kitchen. Leave the hero as type on paper.
 - **Don't** color headings, body copy, or text links in beet, and leave sections on paper.
 - **Don't** stack drop shadows or offset shadows, and leave services out of equal card rows.
 - **Don't** place an eyebrow or a kicker above a heading.

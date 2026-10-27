@@ -1,44 +1,35 @@
-import Image from "next/image";
 import { EnquiryForm } from "@/components/site/enquiry-form";
-import { HeroPhoto } from "@/components/site/hero-photo";
 import { addressLine, mapLink, site } from "@/lib/site";
 
 export default function HomePage() {
   return (
     <main id="inhalt">
-      <section className="flex min-h-[calc(100svh-4rem)] flex-col">
-        <HeroPhoto />
-        <div className="relative z-10 -mt-16 border-t border-ink/15 bg-paper shadow-[0_-28px_40px_-24px_oklch(0.27_0.024_55/0.45)] sm:-mt-24">
-          <div className="mx-auto grid w-full max-w-6xl gap-8 px-5 py-8 sm:px-8 md:grid-cols-[minmax(0,1.4fr)_auto] md:items-end md:py-12 lg:px-10">
-            <div>
-              <h1 className="font-display text-[clamp(2.5rem,4.8vw,5.25rem)] leading-[0.96] tracking-[-0.035em] text-balance">
-                Buffets und Catering
-                <span className="block">in Ehrenfeld.</span>
-              </h1>
-              <p className="mt-5 max-w-[38rem] text-lg leading-relaxed text-ink-soft">
-                Willi Moll kocht seit April 2009 in der Liebigstraße.
-                Grundprodukte aus der Nähe, ohne Fertigprodukte. Das Angebot
-                folgt einem Gespräch.
-              </p>
-              <p className="mt-3 max-w-[38rem] text-sm text-ink-soft">
-                Das Foto ist ein Stellvertreter und zeigt nicht die Küche der
-                mollerie.
-              </p>
-            </div>
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-3 md:justify-end md:pb-1">
-              <a
-                href="#kontakt"
-                className="inline-flex h-12 items-center bg-beet px-6 text-base text-paper hover:bg-beet/90"
-              >
-                Angebot anfragen
-              </a>
-              <a
-                href={`tel:${site.phoneTel}`}
-                className="text-base underline decoration-foreground/40 underline-offset-4 hover:decoration-foreground"
-              >
-                {site.phoneDisplay}
-              </a>
-            </div>
+      <section className="border-b border-border">
+        <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 pb-16 pt-16 sm:px-8 sm:pb-24 sm:pt-24 md:grid-cols-[minmax(0,1.4fr)_auto] md:items-end md:pt-32 lg:px-10 lg:pb-28">
+          <div>
+            <h1 className="font-display text-[clamp(2.5rem,4.8vw,5.25rem)] leading-[0.96] tracking-[-0.035em] text-balance">
+              Buffets und Catering
+              <span className="block">in Ehrenfeld.</span>
+            </h1>
+            <p className="mt-5 max-w-[38rem] text-lg leading-relaxed text-ink-soft">
+              Willi Moll kocht seit April 2009 in der Liebigstraße.
+              Grundprodukte aus der Nähe, ohne Fertigprodukte. Das Angebot
+              folgt einem Gespräch.
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-3 md:justify-end md:pb-1">
+            <a
+              href="#kontakt"
+              className="inline-flex h-12 items-center bg-beet px-6 text-base text-paper hover:bg-beet/90"
+            >
+              Angebot anfragen
+            </a>
+            <a
+              href={`tel:${site.phoneTel}`}
+              className="text-base underline decoration-foreground/40 underline-offset-4 hover:decoration-foreground"
+            >
+              {site.phoneDisplay}
+            </a>
           </div>
         </div>
       </section>
@@ -55,59 +46,29 @@ export default function HomePage() {
             bisherigen Website.
           </p>
 
-          <article className="mt-20 grid items-end gap-8 md:grid-cols-12 md:gap-12">
-            <figure className="md:col-span-7">
-              <div className="relative aspect-[3/4] sm:aspect-[4/5]">
-                <Image
-                  src="/photos/platter.jpg"
-                  alt="Stellvertretendes Foto einer Platte mit Gemüse. Es zeigt kein Gericht der mollerie."
-                  fill
-                  loading="eager"
-                  sizes="(min-width: 768px) 55vw, 100vw"
-                  className="object-cover"
-                />
-              </div>
-              <figcaption className="mt-3 text-sm text-ink-soft">
-                Stellvertretendes Foto, nicht die Küche der mollerie.
-              </figcaption>
-            </figure>
-            <div className="md:col-span-5">
-              <h3 className="font-display text-4xl tracking-[-0.03em]">Buffets</h3>
-              <p className="mt-4 max-w-[40ch] text-lg leading-relaxed text-ink-soft">
-                Für alle möglichen Anlässe, in vielen Varianten. Die
-                Zusammenstellung richtet sich nach der Jahreszeit und nach dem,
-                was Sie vorhaben. Gerichte und Preise besprechen wir, sie
-                stehen hier nicht.
-              </p>
-            </div>
+          <article className="mt-20 max-w-3xl">
+            <h3 className="font-display text-[clamp(2.4rem,4vw,4rem)] tracking-[-0.03em]">
+              Buffets
+            </h3>
+            <p className="mt-5 max-w-[42ch] text-lg leading-relaxed text-ink-soft">
+              Für alle möglichen Anlässe, in vielen Varianten. Die
+              Zusammenstellung richtet sich nach der Jahreszeit und nach dem,
+              was Sie vorhaben. Gerichte und Preise besprechen wir, sie
+              stehen hier nicht.
+            </p>
           </article>
 
-          <article className="mt-28 grid items-center gap-8 md:grid-cols-12 md:gap-12">
-            <div className="md:col-span-5">
-              <h3 className="font-display text-4xl tracking-[-0.03em]">Events</h3>
-              <p className="mt-4 text-lg leading-relaxed text-ink-soft">
-                Für Messe, Film, Foto und Musik. Was an dem Tag auf den Tisch
-                kommt, klären wir am Anlass — nicht über eine fertige Karte.
-              </p>
-            </div>
-            <figure className="md:col-span-7">
-              <div className="relative aspect-[4/3]">
-                <Image
-                  src="/photos/table.jpg"
-                  alt="Stellvertretendes Foto eines gedeckten Tisches. Es zeigt keinen Raum der mollerie."
-                  fill
-                  loading="eager"
-                  sizes="(min-width: 768px) 55vw, 100vw"
-                  className="object-cover"
-                />
-              </div>
-              <figcaption className="mt-3 text-sm text-ink-soft">
-                Stellvertretendes Foto, kein Raum der mollerie.
-              </figcaption>
-            </figure>
+          <article className="mt-16 border-t border-border pt-10 md:grid md:grid-cols-12 md:gap-12">
+            <h3 className="font-display text-4xl tracking-[-0.03em] md:col-span-4">
+              Events
+            </h3>
+            <p className="mt-4 max-w-[46ch] text-lg leading-relaxed text-ink-soft md:col-span-7 md:mt-2">
+              Für Messe, Film, Foto und Musik. Was an dem Tag auf den Tisch
+              kommt, klären wir am Anlass — nicht über eine fertige Karte.
+            </p>
           </article>
 
-          <article className="mt-28 border-t border-border pt-10 md:grid md:grid-cols-12 md:gap-12">
+          <article className="mt-16 border-t border-border pt-10 md:grid md:grid-cols-12 md:gap-12">
             <h3 className="font-display text-4xl tracking-[-0.03em] md:col-span-4">
               Catering
             </h3>

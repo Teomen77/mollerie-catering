@@ -63,16 +63,16 @@ Explicitly not on this page:
 ## Evidence on Hand
 
 - Published copy and Impressum on http://mollerie.de/ (fetched 26 October 2026).
-- No photographs of the real kitchen, buffet, or rooms were provided. Images on this site are generated stand-ins. Alt text says so. Captions must not claim they show the real place.
+- No photographs of the real kitchen, buffet, or rooms were provided. Generated food pictures were removed. Stock food pictures that read as a menu or a hotel buffet were not used. The only picture is the OpenStreetMap of the published address.
 - This session is code-led because one-prompt mode skips the decision page. That path is not stored.
 
 ## Product Principles
 
 - Only published facts and the brief. If a number, dish, or hour is missing, leave it out.
 - The enquiry is the product: phone and email stay one step away.
-- Appetite comes from photography and plain sentences, not from a fake menu.
+- Appetite comes from plain sentences about the kitchen, not from a fake menu or a borrowed dish photo.
 - Legal pages stay short and name what is still unpublished.
 
 ## Accessibility & Inclusion
 
-Formal German. Visible focus, labelled form fields, and text that remains readable on photography. No product-specific access standard was named.
+Formal German. Visible focus and labelled form fields. No product-specific access standard was named.
